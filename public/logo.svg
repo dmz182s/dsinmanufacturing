@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="64" viewBox="0 0 240 64">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#00AFFF"/>
+      <stop offset="1" stop-color="#4CC9FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="64" rx="12" fill="url(#g)" />
+  <text x="26" y="40" font-family="Poppins, Arial" font-weight="700" font-size="22" fill="#fff">Dsin Manufacturing</text>
+</svg>

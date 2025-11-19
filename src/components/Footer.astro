@@ -1,0 +1,108 @@
+---
+import { Image } from "astro:assets";
+
+const year = new Date().getFullYear();
+---
+
+<footer class="py-12 bg-[var(--bg-light)] border-t">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
+    <!-- Brand -->
+    <div class="flex flex-col items-center md:items-start">
+      <!-- <img src="/Logo.png" alt="Dsin Manufacturing logo" class="h-12 mx-auto md:mx-0" /> -->
+      <div class="h-12 mx-auto">
+        <Image src="/Logo.png" alt="logo" height="80" width="480" />
+      </div>
+      <p
+        class="text-sm text-slate-600 mt-4 leading-relaxed max-w-[20rem] md:max-w-none text-center md:text-left whitespace-normal"
+      >
+        Crafting Precision, Delivering Excellence.<br />
+        Trusted precision engineering partner for agriculture, plantation, fabrication,
+        industrial, and automotive sectors.
+      </p>
+    </div>
+
+    <!-- Sections -->
+    <div class="text-center md:text-left">
+      <h3 class="text-lg font-semibold text-slate-800 mb-3">Explore</h3>
+      <ul class="space-y-2 text-sm text-slate-600">
+        <li>
+          <a href="#about" class="hover:text-primary whitespace-normal"
+            >About Us</a>
+        </li>
+        <li>
+          <a href="#services" class="hover:text-primary whitespace-normal"
+            >Services</a>
+        </li>
+        <li>
+          <a href="#process" class="hover:text-primary whitespace-normal"
+            >Process Flow</a>
+        </li>
+        <li>
+          <a href="#portfolio" class="hover:text-primary whitespace-normal"
+            >Portfolio</a>
+        </li>
+        <li>
+          <a href="#technology" class="hover:text-primary whitespace-normal"
+            >Technology</a>
+        </li>
+        <li>
+          <a href="#whyus" class="hover:text-primary whitespace-normal"
+            >Why Choose Us</a>
+        </li>
+        <li>
+          <a href="#testimonials" class="hover:text-primary whitespace-normal"
+            >Testimonials</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Services List -->
+    <div class="text-center md:text-left">
+      <h3 class="text-lg font-semibold text-slate-800 mb-3">Capabilities</h3>
+      <ul class="space-y-2 text-sm text-slate-600">
+        <li>
+          <a href="#services" class="hover:text-primary whitespace-normal"
+            >Precision Manufacturing</a>
+        </li>
+        <li>
+          <a href="#services" class="hover:text-primary whitespace-normal"
+            >Fabrication &amp; Welding</a>
+        </li>
+        <li>
+          <a href="#services" class="hover:text-primary whitespace-normal"
+            >CNC Machining</a>
+        </li>
+        <li>
+          <a href="#services" class="hover:text-primary whitespace-normal"
+            >Equipment Development</a>
+        </li>
+        <li>
+          <a href="#services" class="hover:text-primary whitespace-normal"
+            >Industrial Support</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div class="mt-12 border-t pt-6">
+    <div
+      class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-center md:justify-between items-center gap-4"
+    >
+      <p class="text-sm text-slate-600 text-center md:text-left">
+        © {year} Dsin Manufacturing. All rights reserved.
+      </p>
+      <div class="flex gap-6 text-sm">
+        <a
+          href="#privacy"
+          class="text-slate-600 hover:text-primary whitespace-normal"
+          >Privacy Policy</a
+        >
+        <a
+          href="#terms"
+          class="text-slate-600 hover:text-primary whitespace-normal">Terms</a
+        >
+      </div>
+    </div>
+  </div>
+</footer>

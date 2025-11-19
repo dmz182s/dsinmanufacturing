@@ -1,0 +1,39 @@
+# Node modules
+node_modules/
+
+# Astro build output
+dist/
+public/ # If your build output is configured to 'public'
+_site/ # Older Astro versions or specific configurations
+.astro # Astro's internal cache/generated files
+
+# Editor and OS specific files
+.DS_Store
+*.sublime-workspace
+.vscode/
+.idea/
+
+# Environment variables
+.env
+.env.*
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Logs
+*.log
+
+# Package manager specific files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Vercel/Netlify specific files (if using these platforms)
+.vercel
+.netlify
+
+# TurboRepo (if using a monorepo with TurboRepo)
+.turbo/
+
+# ESLint cache
+.eslintcache

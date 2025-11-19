@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root{
+  --color-primary: #00AFFF;
+  --color-secondary: #4CC9FF;
+  --color-accent: #0F8CE9;
+  --bg-light: #F8FBFF;
+  --text-dark: #0A1A2A;
+  --glass-bg: rgba(255,255,255,0.65);
+  --card-gradient: linear-gradient(135deg,var(--color-primary),var(--color-secondary));
+}
+
+html,body,#root{height:100%;}
+body{
+  @apply bg-[var(--bg-light)] text-[var(--text-dark)] antialiased;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(15,140,233,0.06);
+}
+
+.shadow-soft{ box-shadow: 0 10px 30px rgba(10,26,42,0.06); }
+
+.bg-accent-gradient{ background: var(--card-gradient); }
+.text-primary{ color: var(--color-primary); }
+.btn-primary{ @apply bg-primary text-white px-5 py-2 rounded-full shadow-soft; }
+.card-round{ border-radius: 1rem; }
+.image-placeholder{ background: linear-gradient(90deg, rgba(0,175,255,0.08), rgba(76,201,255,0.06)); display:flex; align-items:center; justify-content:center }
+.rounded-xxl{ border-radius: 1.25rem; }
+
+/* Responsive utilities for larger rounded look */
+@media (min-width: 768px){
+  .rounded-xxl{ border-radius: 2rem; }
+}

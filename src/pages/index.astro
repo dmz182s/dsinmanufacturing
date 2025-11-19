@@ -1,0 +1,32 @@
+---
+import MainLayout from '../layouts/MainLayout.astro'
+import Navbar from '../components/Navbar.astro'
+import HeroSection from '../components/HeroSection.astro'
+import AboutSection from '../components/AboutSection.astro'
+import ServicesSection from '../components/ServicesSection.astro'
+import ProcessFlow from '../components/ProcessFlow.astro'
+import PortfolioSection from '../components/PortfolioSection.astro'
+import TechnologySection from '../components/TechnologySection.astro'
+import WhyUsSection from '../components/WhyUsSection.astro'
+//import StatsCounter from '../components/StatsCounter.astro'//
+import TestimonialSection from '../components/TestimonialSection.astro'
+import ContactForm from '../components/ContactForm.astro'
+import Footer from '../components/Footer.astro'
+
+---
+<MainLayout title="Dsin Manufacturing | Home">
+  <Navbar />
+  <main>
+    <HeroSection />
+    <AboutSection />
+    <ServicesSection />
+    <ProcessFlow />
+    <PortfolioSection />
+    <TechnologySection />
+    <WhyUsSection />
+    <!-- <StatsCounter /> -->
+    <TestimonialSection />
+    <ContactForm />
+  </main>
+  <Footer />
+</MainLayout>

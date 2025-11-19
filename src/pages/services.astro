@@ -1,0 +1,17 @@
+---
+import MainLayout from '../layouts/MainLayout.astro'
+import Navbar from '../components/Navbar.astro'
+import Footer from '../components/Footer.astro'
+import ServicesSection from '../components/ServicesSection.astro'
+---
+<MainLayout title="Services — Dsin Manufacturing">
+  <Navbar />
+  <main class="py-12">
+    <ServicesSection />
+    <section class="max-w-6xl mx-auto px-6 py-8">
+      <h3 class="text-2xl font-bold">Service Details</h3>
+      <p class="mt-4 text-slate-700">Detailed descriptions per service, process data and case studies.</p>
+    </section>
+  </main>
+  <Footer />
+</MainLayout>
