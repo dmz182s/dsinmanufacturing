@@ -1,42 +1,67 @@
 ---
-import { Image } from 'astro:assets';
-import { Fragment } from 'astro/jsx-runtime'
+import { Image } from "astro:assets";
+import { Fragment } from "astro/jsx-runtime";
 ---
+
 <nav class="sticky top-0 z-40 bg-white/60 backdrop-blur glass shadow-soft">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
       <div class="flex items-center gap-4">
-        <a href="/" class="flex items-center gap-3 h-10">
-          <!-- <img src="/Logo.png" alt="logo" class="h-10 w-auto" /> -->
-          <Image src="/Logo.png" alt="logo" height="80" width="480" />
+        <a href="/" class="flex items-center gap-3">
+        <div class="h-10">
+            <Image src="/Logo.png" class="h-10 w-auto" alt="logo" height="80" width="480" />
+          </div>
         </a>
       </div>
       <div class="hidden md:flex items-center gap-6">
         <a href="/" class="text-sm font-medium hover:text-primary">Home</a>
-        <a href="/about" class="text-sm font-medium hover:text-primary">About Us</a>
-        <a href="/services" class="text-sm font-medium hover:text-primary">Services</a>
-        <a href="/portfolio" class="text-sm font-medium hover:text-primary">Portfolio</a>
-        <a href="/technology" class="text-sm font-medium hover:text-primary">Technology</a>
-        <a href="/contact" class="text-sm font-medium hover:text-primary">Contact</a>
-        <a href="/privacy" class="ml-3 inline-flex items-center px-4 py-2 rounded-full bg-accent-gradient text-white text-sm">Get Quote</a>
+        <a href="/about" class="text-sm font-medium hover:text-primary"
+          >About Us</a
+        >
+        <a href="/services" class="text-sm font-medium hover:text-primary"
+          >Services</a
+        >
+        <a href="/portfolio" class="text-sm font-medium hover:text-primary"
+          >Portfolio</a
+        >
+        <a href="/technology" class="text-sm font-medium hover:text-primary"
+          >Technology</a
+        >
+        <a href="/contact" class="text-sm font-medium hover:text-primary"
+          >Contact</a
+        >
+        <a
+          href="/privacy"
+          class="ml-3 inline-flex items-center px-4 py-2 rounded-full bg-accent-gradient text-white text-sm"
+          >Get Quote</a
+        >
       </div>
       <div class="md:hidden">
         <button id="menuBtn" class="p-2 rounded-md focus:outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
         </button>
       </div>
     </div>
   </div>
   <script>
-    const btn = document.getElementById('menuBtn');
-    btn?.addEventListener('click', () => {
-      const el = document.getElementById('mobileMenu');
+    const btn = document.getElementById("menuBtn");
+    btn?.addEventListener("click", () => {
+      const el = document.getElementById("mobileMenu");
       if (!el) {
-        const menu = document.createElement('div');
-        menu.id = 'mobileMenu';
-        menu.className = 'md:hidden p-6 bg-white shadow-lg';
+        const menu = document.createElement("div");
+        menu.id = "mobileMenu";
+        menu.className = "md:hidden p-6 bg-white shadow-lg";
         menu.innerHTML = `
           <a href='/' class='block py-2'>Home</a>
           <a href='/about' class='block py-2'>About Us</a>
@@ -45,7 +70,7 @@ import { Fragment } from 'astro/jsx-runtime'
           <a href='/technology' class='block py-2'>Technology</a>
           <a href='/contact' class='block py-2'>Contact</a>
         `;
-        document.querySelector('nav')?.appendChild(menu);
+        document.querySelector("nav")?.appendChild(menu);
       } else {
         el.remove();
       }
