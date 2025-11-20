@@ -1,0 +1,97 @@
+<section
+  id="about"
+  class="relative py-24 bg-gradient-to-br from-white via-sky-50 to-blue-100 overflow-hidden"
+>
+  <!-- Background decorative shapes -->
+  <div
+    class="absolute top-0 right-0 w-64 h-64 bg-blue-200 rounded-full blur-3xl opacity-30"
+  >
+  </div>
+  <div
+    class="absolute bottom-0 left-0 w-72 h-72 bg-sky-300 rounded-full blur-3xl opacity-20"
+  >
+  </div>
+
+  <div
+    class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10"
+  >
+    <!-- TEXT SIDE -->
+    <div class="animate-fadeInUp" style="animation-delay:0.1s;">
+      <h2
+        class="text-4xl md:text-5xl font-extrabold text-sky-800 leading-tight mb-6"
+      >
+        Engineering Precision for <span class="text-blue-600"
+          >Modern Industries</span
+        >
+      </h2>
+
+      <p class="text-lg text-slate-600 mb-6 max-w-xl">
+        <strong><b>Dsin Manufacturing</b></strong> delivers precision-engineered solutions powered by
+        modern machining technology, innovation, and reliability—serving
+        automotive, industrial, fabrication, and agricultural sectors with
+        world-class standards.
+      </p>
+
+      <p class="text-base text-slate-500 mb-10 max-w-lg">
+        Supported by experienced engineers and advanced production systems, we
+        help businesses achieve higher efficiency, accuracy, and performance.
+      </p>
+
+      <!-- CTA BUTTONS -->
+      <div class="flex gap-4">
+        <a
+          href="/about"
+          class="px-8 py-3 bg-blue-600 text-white font-semibold rounded-xl shadow-lg hover:bg-blue-700 transition-all"
+        >
+          Read More →
+        </a>
+
+        <a
+          href="#contact"
+          class="px-8 py-3 bg-white text-blue-700 border border-blue-300 font-semibold rounded-xl shadow-md hover:bg-blue-50 transition-all"
+        >
+          Free Consultation
+        </a>
+      </div>
+    </div>
+
+    <!-- ILLUSTRATION SIDE -->
+    <div
+      class="flex items-center justify-center animate-fadeInUp"
+      style="animation-delay:0.25s;"
+    >
+      <div class="relative">
+        <img
+          src="/images/cnc01.webp"
+          alt="Precision Engineering"
+          class="w-full max-w-lg drop-shadow-xl rounded-2xl"
+        />
+
+        <!-- Decorative Floating Card -->
+        <div
+          class="absolute -bottom-6 -right-6 bg-white/80 backdrop-blur-md border border-sky-100 shadow-xl rounded-xl p-4 w-40"
+        >
+          <h4 class="text-sm font-semibold text-sky-700">High Precision</h4>
+          <p class="text-xs text-slate-600">±0.005 mm accuracy</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Animation CSS (local) -->
+  <style>
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animate-fadeInUp {
+      animation: fadeInUp 0.9s ease forwards;
+    }
+  </style>
+</section>

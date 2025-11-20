@@ -1,17 +1,139 @@
 ---
-import MainLayout from '../layouts/MainLayout.astro'
-import Navbar from '../components/Navbar.astro'
-import Footer from '../components/Footer.astro'
-import ServicesSection from '../components/ServicesSection.astro'
+import MainLayout from '../layouts/MainLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
 ---
-<MainLayout title="Services — Dsin Manufacturing">
+
+<MainLayout title="Our Services">
   <Navbar />
-  <main class="py-12">
-    <ServicesSection />
-    <section class="max-w-6xl mx-auto px-6 py-8">
-      <h3 class="text-2xl font-bold">Service Details</h3>
-      <p class="mt-4 text-slate-700">Detailed descriptions per service, process data and case studies.</p>
-    </section>
-  </main>
+
+  <section id="services" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-extrabold text-sky-700 drop-shadow">
+        Our Services
+      </h2>
+      <p class="text-slate-600 mt-3 max-w-2xl">
+        Explore our complete engineering and manufacturing capabilities designed for precision and efficiency.
+      </p>
+
+      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- CARD -->
+        <article class="p-5 rounded-2xl bg-white/60 backdrop-blur shadow-md hover:shadow-xl transition overflow-hidden border border-blue-100">
+          <img src="/images/Manufacturing.webp" alt="Manufacturing Services" loading="lazy"
+            class="w-full h-48 object-cover rounded-xl mb-4" />
+          <h4 class="font-semibold text-lg">Manufacturing Services</h4>
+          <p class="text-sm mt-2 text-slate-600">End-to-end production run support and assembly.</p>
+
+          <details class="mt-3">
+            <summary class="cursor-pointer text-blue-600 font-semibold">Service Details</summary>
+            <ul class="text-xs text-slate-600 mt-2 list-disc pl-4 space-y-1">
+              <li>Rapid prototyping and pilot runs</li>
+              <li>Material sourcing and logistics</li>
+              <li>Custom tooling and fixtures</li>
+              <li>Scalable production for small and large batches</li>
+              <li>Assembly, packaging, and delivery</li>
+            </ul>
+          </details>
+        </article>
+
+        <!-- CARD -->
+        <article class="p-5 rounded-2xl bg-white/60 backdrop-blur shadow-md hover:shadow-xl transition overflow-hidden border border-blue-100">
+          <img src="/images/CNC.webp" alt="CNC Machining" loading="lazy"
+            class="w-full h-48 object-cover rounded-xl mb-4" />
+          <h4 class="font-semibold text-lg">CNC Machining</h4>
+          <p class="text-sm mt-2 text-slate-600">Multi-axis precision machining for complex parts.</p>
+
+          <details class="mt-3">
+            <summary class="cursor-pointer text-blue-600 font-semibold">Service Details</summary>
+            <ul class="text-xs text-slate-600 mt-2 list-disc pl-4 space-y-1">
+              <li>3 axis CNC milling</li>
+              <li>High-tolerance metal and plastic machining</li>
+              <li>Complex geometries and surface finishes</li>
+              <li>Batch and custom part production</li>
+              <li>Post-processing: deburring, anodizing, coating</li>
+            </ul>
+          </details>
+        </article>
+
+        <!-- CARD -->
+        <article class="p-5 rounded-2xl bg-white/60 backdrop-blur shadow-md hover:shadow-xl transition overflow-hidden border border-blue-100">
+          <img src="/images/Engineering Prototype Development.jpg" alt="Engineering & Design" loading="lazy"
+            class="w-full h-48 object-cover rounded-xl mb-4" />
+          <h4 class="font-semibold text-lg">Engineering & Design</h4>
+          <p class="text-sm mt-2 text-slate-600">CAD, FEA, DFMA and prototyping services.</p>
+
+          <details class="mt-3">
+            <summary class="cursor-pointer text-blue-600 font-semibold">Service Details</summary>
+            <ul class="text-xs text-slate-600 mt-2 list-disc pl-4 space-y-1">
+              <li>CAD modeling and technical drawings</li>
+              <li>Finite Element Analysis (FEA)</li>
+              <li>Design for Manufacturability (DFMA)</li>
+              <li>Rapid prototyping and 3D printing</li>
+              <li>Product development consulting</li>
+            </ul>
+          </details>
+        </article>
+
+        <!-- CARD -->
+        <article class="p-5 rounded-2xl bg-white/60 backdrop-blur shadow-md hover:shadow-xl transition overflow-hidden border border-blue-100">
+          <img src="/images/Assembly & Production.jpg" alt="Assembly & Production" loading="lazy"
+            class="w-full h-48 object-cover rounded-xl mb-4" />
+          <h4 class="font-semibold text-lg">Assembly & Production</h4>
+          <p class="text-sm mt-2 text-slate-600">High-volume and small-batch assembly lines.</p>
+
+          <details class="mt-3">
+            <summary class="cursor-pointer text-blue-600 font-semibold">Service Details</summary>
+            <ul class="text-xs text-slate-600 mt-2 list-disc pl-4 space-y-1">
+              <li>Automated and manual assembly lines</li>
+              <li>Component integration and testing</li>
+              <li>Flexible production for various volumes</li>
+              <li>Packaging and labeling solutions</li>
+              <li>Traceability and process documentation</li>
+            </ul>
+          </details>
+        </article>
+
+        <!-- CARD -->
+        <article class="p-5 rounded-2xl bg-white/60 backdrop-blur shadow-md hover:shadow-xl transition overflow-hidden border border-blue-100">
+          <img src="/images/QA.jpg" alt="Quality Assurance" loading="lazy"
+            class="w-full h-48 object-cover rounded-xl mb-4" />
+          <h4 class="font-semibold text-lg">Quality Assurance</h4>
+          <p class="text-sm mt-2 text-slate-600">In-line inspection and final QA per ISO standards.</p>
+
+          <details class="mt-3">
+            <summary class="cursor-pointer text-blue-600 font-semibold">Service Details</summary>
+            <ul class="text-xs text-slate-600 mt-2 list-disc pl-4 space-y-1">
+              <li>In-process and final inspection</li>
+              <li>Metrology measurement</li>
+              <li>Documentation and traceability</li>
+              <li>Customer-specific QA protocols</li>
+            </ul>
+          </details>
+        </article>
+
+        <!-- CARD -->
+        <article class="p-5 rounded-2xl bg-white/60 backdrop-blur shadow-md hover:shadow-xl transition overflow-hidden border border-blue-100">
+          <img src="/images/Prototype.jpg" alt="OEM/ODM Support" loading="lazy"
+            class="w-full h-48 object-cover rounded-xl mb-4" />
+          <h4 class="font-semibold text-lg">OEM/ODM Support</h4>
+          <p class="text-sm mt-2 text-slate-600">From custom designs to production-ready solutions.</p>
+
+          <details class="mt-3">
+            <summary class="cursor-pointer text-blue-600 font-semibold">Service Details</summary>
+            <ul class="text-xs text-slate-600 mt-2 list-disc pl-4 space-y-1">
+              <li>Custom product design and engineering</li>
+              <li>Prototype to mass production support</li>
+              <li>Branding and packaging options</li>
+              <li>Supply chain and logistics management</li>
+              <li>After-sales technical support</li>
+            </ul>
+          </details>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
   <Footer />
 </MainLayout>

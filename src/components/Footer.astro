@@ -4,37 +4,92 @@ const year = new Date().getFullYear();
 
 <footer class="py-12 bg-[var(--bg-light)] border-t">
   <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
-    
     <!-- Brand -->
     <div class="flex flex-col items-center md:items-start">
       <!-- LOGO RESPONSIVE -->
-      <img 
-        src="/Logo.png" 
-        alt="Dsin Manufacturing logo" 
+      <img
+        src="/Logo.png"
+        alt="Dsin Manufacturing logo"
         class="h-10 sm:h-12 lg:h-14 w-auto mx-auto md:mx-0 transition-all duration-300"
         loading="lazy"
       />
 
-      <p
-        class="text-sm text-slate-600 mt-4 leading-relaxed max-w-[20rem] md:max-w-none text-center md:text-left whitespace-normal"
-      >
-        Crafting Precision, Delivering Excellence.<br />
-        Trusted precision engineering partner for agriculture, plantation,
-        fabrication, industrial, and automotive sectors.
-      </p>
+      <div class="mb-4">
+        <p class="text-sm text-slate-700 mt-2 flex items-center gap-2">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24"
+            ><path
+              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"
+              fill="#38bdf8"></path><circle
+              cx="12"
+              cy="9"
+              r="2.5"
+              fill="#0ea5e9"></circle></svg
+          >Bandar Jaya Timur, Terbanggi Besar, Lampung Tengah, Lampung 34163
+        </p>
+        <p class="text-sm text-slate-700 flex items-center gap-2">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24"
+            ><path
+              d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 011 1v3.5a1 1 0 01-1 1C7.61 21 3 16.39 3 11.5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.21 1.11l-2.2 2.2z"
+              fill="#38bdf8"></path></svg
+          >+62 85890883761
+        </p>
+        <p class="text-sm text-slate-700 flex items-center gap-2">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24"
+            ><rect x="2" y="6" width="20" height="12" rx="2" fill="#0ea5e9"
+            ></rect><path
+              d="M22 6l-10 7L2 6"
+              stroke="#fff"
+              stroke-width="2"
+              stroke-linecap="round"></path></svg
+          >support@dsinmanufacturing.com
+        </p>
+
+        <!-- Added Working Hours -->
+        <p class="text-sm text-slate-700 flex items-center gap-2 mt-2">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24"
+            ><circle cx="12" cy="12" r="10" fill="#38bdf8"></circle><path
+              d="M12 6v6l4 2"
+              stroke="#fff"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"></path></svg
+          >Working Hours: Monday - Friday, 08.00 - 17.00
+        </p>
+      </div>
     </div>
 
     <!-- Sections -->
     <div class="text-center md:text-left">
       <h3 class="text-lg font-semibold text-slate-800 mb-3">Explore</h3>
       <ul class="space-y-2 text-sm text-slate-600">
-        <li><a href="#about" class="hover:text-primary whitespace-normal">About Us</a></li>
-        <li><a href="#services" class="hover:text-primary whitespace-normal">Services</a></li>
-        <li><a href="#process" class="hover:text-primary whitespace-normal">Process Flow</a></li>
-        <li><a href="#portfolio" class="hover:text-primary whitespace-normal">Portfolio</a></li>
-        <li><a href="#technology" class="hover:text-primary whitespace-normal">Technology</a></li>
-        <li><a href="#whyus" class="hover:text-primary whitespace-normal">Why Choose Us</a></li>
-        <li><a href="#testimonials" class="hover:text-primary whitespace-normal">Testimonials</a></li>
+        <li>
+          <a href="#about" class="hover:text-primary whitespace-normal"
+            >About Us</a>
+        </li>
+        <li>
+          <a href="#services" class="hover:text-primary whitespace-normal"
+            >Services</a>
+        </li>
+        <li>
+          <a href="#process" class="hover:text-primary whitespace-normal"
+            >Process Flow</a>
+        </li>
+        <li>
+          <a href="#portfolio" class="hover:text-primary whitespace-normal"
+            >Portfolio</a>
+        </li>
+        <li>
+          <a href="#technology" class="hover:text-primary whitespace-normal"
+            >Technology</a>
+        </li>
+        <li>
+          <a href="#whyus" class="hover:text-primary whitespace-normal"
+            >Why Choose Us</a>
+        </li>
+        <li>
+          <a href="#testimonials" class="hover:text-primary whitespace-normal"
+            >Testimonials</a>
+        </li>
       </ul>
     </div>
 
@@ -42,11 +97,26 @@ const year = new Date().getFullYear();
     <div class="text-center md:text-left">
       <h3 class="text-lg font-semibold text-slate-800 mb-3">Capabilities</h3>
       <ul class="space-y-2 text-sm text-slate-600">
-        <li><a href="#services" class="hover:text-primary whitespace-normal">Precision Manufacturing</a></li>
-        <li><a href="#services" class="hover:text-primary whitespace-normal">Fabrication &amp; Welding</a></li>
-        <li><a href="#services" class="hover:text-primary whitespace-normal">CNC Machining</a></li>
-        <li><a href="#services" class="hover:text-primary whitespace-normal">Equipment Development</a></li>
-        <li><a href="#services" class="hover:text-primary whitespace-normal">Industrial Support</a></li>
+        <li>
+          <a href="#services" class="hover:text-primary whitespace-normal"
+            >Precision Manufacturing</a>
+        </li>
+        <li>
+          <a href="#services" class="hover:text-primary whitespace-normal"
+            >Fabrication &amp; Welding</a>
+        </li>
+        <li>
+          <a href="#services" class="hover:text-primary whitespace-normal"
+            >CNC Machining</a>
+        </li>
+        <li>
+          <a href="#services" class="hover:text-primary whitespace-normal"
+            >Equipment Development</a>
+        </li>
+        <li>
+          <a href="#services" class="hover:text-primary whitespace-normal"
+            >Industrial Support</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -60,8 +130,11 @@ const year = new Date().getFullYear();
         © {year} Dsin Manufacturing. All rights reserved.
       </p>
       <div class="flex gap-6 text-sm">
-        <a href="#privacy" class="text-slate-600 hover:text-primary whitespace-normal">Privacy Policy</a>
-        <a href="#terms" class="text-slate-600 hover:text-primary whitespace-normal">Terms</a>
+        <a
+          href="/privacy"
+          class="text-slate-600 hover:text-primary whitespace-normal"
+          >Privacy Policy & Term Condition</a
+        >
       </div>
     </div>
   </div>

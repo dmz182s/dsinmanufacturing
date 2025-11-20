@@ -19,27 +19,39 @@ import { Fragment } from "astro/jsx-runtime";
       </div>
       <!-- DESKTOP MENU -->
       <div class="hidden md:flex items-center gap-6">
-        <a href="/" class="text-sm font-medium hover:text-primary">Home</a>
-        <a href="/about" class="text-sm font-medium hover:text-primary"
-          >About Us</a
-        >
-        <a href="/services" class="text-sm font-medium hover:text-primary"
-          >Services</a
-        >
-        <a href="/portfolio" class="text-sm font-medium hover:text-primary"
-          >Portfolio</a
-        >
-        <a href="/technology" class="text-sm font-medium hover:text-primary"
-          >Technology</a
-        >
-        <a href="/contact" class="text-sm font-medium hover:text-primary"
-          >Contact</a
-        >
+        <a href="/" class="text-sm font-semibold hover:text-primary">Home</a>
+
+        <a href="/about" class="text-sm font-semibold hover:text-primary">
+          About Us
+        </a>
+
+        <a href="/services" class="text-sm font-semibold hover:text-primary">
+          Services
+        </a>
+
+        <a href="/portfolio" class="text-sm font-semibold hover:text-primary">
+          Portfolio
+        </a>
+
+        <a href="/technology" class="text-sm font-semibold hover:text-primary">
+          Technology
+        </a>
+
+        <!-- CONTACT - dibedakan -->
         <a
           href="/contact"
-          class="ml-3 inline-flex items-center px-4 py-2 rounded-full bg-accent-gradient text-white text-sm"
-          >Get Quote</a
+          class="text-sm font-bold text-primary hover:opacity-80"
         >
+          Contact
+        </a>
+
+        <!-- BUTTON QUOTE -->
+        <a
+          href="/contact"
+          class="ml-3 inline-flex items-center px-4 py-2 rounded-full bg-accent-gradient text-white text-sm font-semibold"
+        >
+          Get Quote
+        </a>
       </div>
 
       <!-- MOBILE ICON -->

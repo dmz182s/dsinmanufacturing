@@ -1,0 +1,99 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+
+const steps = [
+  {
+    number: "01",
+    title: "Requirement Analysis",
+    desc: "We collect specifications, engineering constraints, and clear objectives from your project.",
+    icon: "⚙️",
+  },
+  {
+    number: "02",
+    title: "Design & Engineering",
+    desc: "CAD modeling, tolerance study, simulation & precision engineering planning.",
+    icon: "📐",
+  },
+  {
+    number: "03",
+    title: "Prototyping",
+    desc: "Functional testing, form validation, and feasibility refinement.",
+    icon: "🧪",
+  },
+  {
+    number: "04",
+    title: "Manufacturing",
+    desc: "Precision CNC machining, welding, fabrication, and controlled assembly.",
+    icon: "🏭",
+  },
+  {
+    number: "05",
+    title: "Quality Assurance",
+    desc: "Strict inspection, dimensional accuracy validation, and QC documentation.",
+    icon: "✔️",
+  },
+  {
+    number: "06",
+    title: "Delivery & Support",
+    desc: "Safe packaging, coordinated delivery, and ongoing after-sales support.",
+    icon: "🚚",
+  },
+];
+---
+
+<MainLayout title="Our Premium Process">
+  <Navbar />
+
+  <section class="py-24 bg-gradient-to-b from-slate-50 to-blue-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <!-- TITLE -->
+      <div class="text-center mb-16">
+        <h1 class="text-5xl font-extrabold text-sky-700 drop-shadow">
+          Our Process Flow
+        </h1>
+        <p class="text-lg text-slate-600 mt-3 max-w-2xl mx-auto">
+          Explore our high-precision industrial workflow built for quality,
+          reliability, and world-class engineering results.
+        </p>
+      </div>
+
+      <!-- GRID -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+        {
+          steps.map((step) => (
+            <div
+              class="p-8 bg-white/40 backdrop-blur-xl border border-white/50 rounded-3xl shadow-xl 
+                   hover:shadow-2xl hover:-translate-y-2 transition-all duration-300
+                   bg-gradient-to-br from-white/70 via-sky-50/60 to-blue-50/60"
+            >
+              <div class="text-5xl">{step.icon}</div>
+              <h3 class="text-3xl font-bold text-sky-700 mt-4">
+                {step.number}
+              </h3>
+              <h4 class="text-xl font-semibold text-slate-800 mt-1">
+                {step.title}
+              </h4>
+              <p class="text-slate-600 mt-3 text-sm leading-relaxed">
+                {step.desc}
+              </p>
+            </div>
+          ))
+        }
+      </div>
+
+      <!-- CTA -->
+      <div class="text-center mt-20">
+        <a
+          href="/contact"
+          class="px-10 py-4 bg-sky-600 text-white font-semibold rounded-2xl shadow-xl
+         hover:bg-sky-700 hover:shadow-2xl transition-all duration-300"
+        >
+          Contact Us for Custom Project →
+        </a>
+      </div>
+    </div>
+  </section>
+  <Footer />
+</MainLayout>

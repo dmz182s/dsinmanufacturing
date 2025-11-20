@@ -1,13 +1,157 @@
 ---
-import MainLayout from '../layouts/MainLayout.astro'
-import Navbar from '../components/Navbar.astro'
-import Footer from '../components/Footer.astro'
-import PortfolioSection from '../components/PortfolioSection.astro'
+import MainLayout from "../layouts/MainLayout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
 ---
-<MainLayout title="Portfolio — Dsin Manufacturing">
+
+<MainLayout title="Portfolio">
   <Navbar />
-  <main class="py-12">
-    <PortfolioSection />
-  </main>
+
+  <section class="py-24 bg-gradient-to-br from-white via-blue-50 to-sky-100">
+    <div class="max-w-7xl mx-auto px-6">
+      <h1 class="text-5xl font-extrabold text-sky-700 drop-shadow mb-6">Portfolio</h1>
+
+      <p class="text-lg text-slate-700 max-w-3xl mb-14">
+        A comprehensive showcase of our engineering, machining, fabrication, and OEM/ODM projects across Agriculture, Plantation, Industrial, and Automotive sectors.
+      </p>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+        <!-- DETAIL CARD TEMPLATE -->
+        <article class="rounded-2xl overflow-hidden bg-white/70 border border-blue-100 shadow-xl hover:shadow-2xl backdrop-blur-lg transition">
+          <img src="/images/Agricultural Machinery Component.jpg" class="w-full h-56 object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-blue-600">Agricultural Machinery Component</h3>
+            <p class="text-sm text-slate-700 mt-2">
+              Heavy-duty precision machining for agricultural equipment with reinforced steel alloys designed for harsh field operations.
+            </p>
+
+            <ul class="mt-4 text-sm text-slate-600 space-y-1 list-disc pl-5">
+              <li>High-strength steel machining</li>
+              <li>Corrosion-resistant coating</li>
+              <li>Field-testing for durability</li>
+              <li>OEM-ready component design</li>
+            </ul>
+
+            <span class="inline-block mt-4 bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-xs font-semibold">
+              Agriculture
+            </span>
+          </div>
+        </article>
+
+        <!-- Plantation -->
+        <article class="rounded-2xl overflow-hidden bg-white/70 border border-sky-100 shadow-xl hover:shadow-2xl backdrop-blur-lg transition">
+          <img src="/images/Plantation Equipment Housing.jpg" class="w-full h-56 object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-sky-600">Plantation Equipment Housing</h3>
+            <p class="text-sm text-slate-700 mt-2">
+              Fabricated protective housings for plantation machinery designed with weatherproof materials and precision welding.
+            </p>
+
+            <ul class="mt-4 text-sm text-slate-600 space-y-1 list-disc pl-5">
+              <li>High-strength steel / aluminium fabrication</li>
+              <li>Anti-rust chemical treatment</li>
+              <li>Welding & assembly fixtures</li>
+              <li>Production-grade finishing</li>
+            </ul>
+
+            <span class="inline-block mt-4 bg-sky-50 text-sky-600 px-3 py-1 rounded-full text-xs font-semibold">
+              Plantation
+            </span>
+          </div>
+        </article>
+
+        <!-- Industrial -->
+        <article class="rounded-2xl overflow-hidden bg-white/70 border border-blue-100 shadow-xl hover:shadow-2xl backdrop-blur-lg transition">
+          <img src="/images/Industrial Jig and Fixture.png" class="w-full h-56 object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-blue-600">Industrial Jig & Fixture</h3>
+            <p class="text-sm text-slate-700 mt-2">
+              Custom-engineered fixtures to improve productivity, accuracy, and part alignment in assembly processes.
+            </p>
+
+            <ul class="mt-4 text-sm text-slate-600 space-y-1 list-disc pl-5">
+              <li>CNC milled base plates</li>
+              <li>Precision alignment pins</li>
+              <li>Industrial-grade clamps</li>
+              <li>Custom production automation tooling</li>
+            </ul>
+
+            <span class="inline-block mt-4 bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-xs font-semibold">
+              Industrial
+            </span>
+          </div>
+        </article>
+
+        <!-- Fabrication -->
+        <article class="rounded-2xl overflow-hidden bg-white/70 border border-sky-100 shadow-xl hover:shadow-2xl backdrop-blur-lg transition">
+          <img src="/images/Fabricated Mechanical Assembly.jpg" class="w-full h-56 object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-sky-600">Fabricated Mechanical Assembly</h3>
+            <p class="text-sm text-slate-700 mt-2">
+              Complex welded assemblies and precision machined components for industrial and process equipment.
+            </p>
+
+            <ul class="mt-4 text-sm text-slate-600 space-y-1 list-disc pl-5">
+              <li>Steel & aluminum fabrication</li>
+              <li>Bending, welding & grinding</li>
+              <li>Dimensional QC inspection</li>
+              <li>Assembly & surface finishing</li>
+            </ul>
+
+            <span class="inline-block mt-4 bg-sky-50 text-sky-600 px-3 py-1 rounded-full text-xs font-semibold">
+              Fabrication
+            </span>
+          </div>
+        </article>
+
+        <!-- Prototype Engineering -->
+        <article class="rounded-2xl overflow-hidden bg-white/70 border border-blue-100 shadow-xl hover:shadow-2xl backdrop-blur-lg transition">
+          <img src="/images/Engineering Prototype Development.jpg" class="w-full h-56 object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-blue-600">Engineering Prototype Development</h3>
+            <p class="text-sm text-slate-700 mt-2">
+              Rapid prototypes built with CAD/CAM engineering, CNC machining, and validation testing.
+            </p>
+
+            <ul class="mt-4 text-sm text-slate-600 space-y-1 list-disc pl-5">
+              <li>CAD modeling & simulation</li>
+              <li>Functional prototyping</li>
+              <li>Pre-production sampling</li>
+              <li>Iterative engineering improvement</li>
+            </ul>
+
+            <span class="inline-block mt-4 bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-xs font-semibold">
+              Engineering
+            </span>
+          </div>
+        </article>
+
+        <!-- Automotive -->
+        <article class="rounded-2xl overflow-hidden bg-white/70 border border-sky-100 shadow-xl hover:shadow-2xl backdrop-blur-lg transition">
+          <img src="/images/Automotive Precision Component.jpg" class="w-full h-56 object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-sky-600">Automotive Precision Component</h3>
+            <p class="text-sm text-slate-700 mt-2">
+              CNC precision parts for automotive systems requiring strict tolerances and reliability.
+            </p>
+
+            <ul class="mt-4 text-sm text-slate-600 space-y-1 list-disc pl-5">
+              <li>Tolerances up to ±0.01 mm</li>
+              <li>High-strength material machining</li>
+              <li>Surface finishing & coating</li>
+              <li>OEM/ODM automotive support</li>
+            </ul>
+
+            <span class="inline-block mt-4 bg-sky-50 text-sky-600 px-3 py-1 rounded-full text-xs font-semibold">
+              Automotive
+            </span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
   <Footer />
 </MainLayout>
