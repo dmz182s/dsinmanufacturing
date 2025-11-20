@@ -9,6 +9,8 @@
   --color-accent: #0F8CE9;
   --bg-light: #F8FBFF;
   --text-dark: #0A1A2A;
+  --glass-nav: rgba(255, 255, 255, 0.158); /* cerah */
+  --glass-hero: rgba(48, 49, 49, 0.514);  /* gelap */
   --glass-bg: rgba(255,255,255,0.65);
   --card-gradient: linear-gradient(135deg,var(--color-primary),var(--color-secondary));
 }
@@ -19,12 +21,27 @@ body{
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
 }
 
-.glass {
+/* .glass {
   background: var(--glass-bg);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(15,140,233,0.06);
+  border: 1px solid rgba(233, 15, 15, 0.06);
+} */
+
+.glass-hero {
+  background: var(--glass-hero);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.1);
 }
+
+.glass-nav {
+  background: var(--glass-nav);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
 
 .shadow-soft{ box-shadow: 0 10px 30px rgba(10,26,42,0.06); }
 
@@ -39,3 +56,4 @@ body{
 @media (min-width: 768px){
   .rounded-xxl{ border-radius: 2rem; }
 }
+

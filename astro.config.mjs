@@ -1,10 +1,16 @@
-import { defineConfig } from 'astro/config'
+import { defineConfig } from 'astro/config';
+import tailwind from "@astrojs/tailwind";
+import vercel from "@astrojs/vercel";
 
 export default defineConfig({
   site: 'https://example.com',
-  markdown: {
-    shikiConfig: {
-      theme: 'nord'
-    }
-  }
-})
+  integrations: [
+    tailwind({
+      config: {
+        applyBaseStyles: true,
+      },
+    }),
+  ],
+  output: 'hybrid',
+  adapter: vercel(),
+});
